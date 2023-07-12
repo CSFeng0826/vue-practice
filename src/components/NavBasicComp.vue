@@ -15,6 +15,8 @@
                   { name: "元件化", link: "/basic/components"},
                   { name: "Todo 範例練習", link: "/basic/todo"},
                   { name: "延伸介紹 - Vue 生命週期", link: "/basic/v_lifecycle"} ];
+    
+    
 </script>
 
 <template>
@@ -42,10 +44,15 @@
     text-decoration-color: var(--green-light);
 }
 
-.btn-basic:active,
-.btn-basic:focus {
+.router-link-exact-active {
     background-color: var(--green-light);
     color: var(--white);
+}
+
+.router-link-exact-active:hover {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--green-light);
 }
 
 </style>

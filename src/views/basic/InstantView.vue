@@ -1,17 +1,11 @@
 <script setup>
-import NavbasicComp from '../../components/NavbasicComp.vue';
+import NavBasicComp from '../../components/NavBasicComp.vue';
+import BasicTitleComp from '../../components/BasicTitleComp.vue';
 </script>
 
 <template>
   <div class="d-flex">
-    <NavbasicComp />
-    <div class="test">test</div>
+    <NavBasicComp />
+    <BasicTitleComp />
   </div>
 </template>
-
-<style>
-.test {
-  width: 300px;
-  height: 300px;
-}
-</style>
