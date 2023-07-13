@@ -1,7 +1,3 @@
-<script setup>
-import { RouterLink } from 'vue-router';
-</script>
-
 <template>
     <nav class="navbar navbar-expand-lg navbar-light">
         <RouterLink class="navbar-brand" to="/">Vue.js 練習手冊</RouterLink>
@@ -15,10 +11,10 @@ import { RouterLink } from 'vue-router';
         >
             <span class="navbar-toggler-icon"></span>
         </button>
-
+  
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item"><RouterLink class="nav-link" to="/basic/dev">基礎教學</RouterLink></li>
+                <li class="nav-item"><RouterLink class="nav-link" to="/basic">基礎教學</RouterLink></li>
                 <li class="nav-item"><RouterLink class="nav-link" to="/">模板指令</RouterLink></li>
                 <li class="nav-item"><RouterLink class="nav-link" to="/">組件</RouterLink></li>
                 <li class="nav-item"><RouterLink class="nav-link" to="/">常用 API</RouterLink></li>
@@ -28,38 +24,36 @@ import { RouterLink } from 'vue-router';
     </nav>
 </template>
 
-<style>
+<style scoped>
+  a {
+      text-decoration: none;
+  }
 
-a {
-    text-decoration: none;
-}
+  .navbar {
+      background-color: var(--green-light);
+  }
 
-.navbar {
-    background-color: var(--green-light);
-}
+  .navbar-brand {
+      color: var(--white);
+      margin-left: 15px;
+  }
 
-.navbar-brand {
-    color: var(--white);
-    margin-left: 15px;
-}
+  .navbar-brand:hover,
+  .navbar-brand:active,
+  .navbar-brand:focus {
+      color: var(--white);
+  }
 
-.navbar-brand:hover,
-.navbar-brand:active,
-.navbar-brand:focus {
-    color: var(--white);
-}
+  .nav-link {
+      color: var(--white-nav-link);
+  }
 
-.nav-link {
-    color: var(--white-nav-link);
-}
+  .nav-link:hover {
+      color: var(--white);
+  }
 
-.nav-link:hover {
-    color: var(--white);
-}
-
-.nav-link:active,
-.nav-link:focus {
-    color: var(--white);
-}
-
+  .nav-link:active,
+  .nav-link:focus {
+      color: var(--white);
+  }
 </style>
